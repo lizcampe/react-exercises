@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<html >
+
+<head>
+	<meta charset= "utf-8">
+	<script>
+	function myFunction() {
+		alert("Página ha sido cargada!");
+	}
+	</script>
+
+
+</head>
+
+
+<body onload= "myFunction()">
+	<h1> Hola mundo </h1>
+
+<p> <h1 id= "title">Registrate</h1> </p>
+
+<script>
+document.getElementById("title").innerHTML ="Regístrate ahora";
+</script>
+
+<form name ="formulario" method="post" action= "http://pagina.com/send.php">
+		<!-- Primer campo de entrada de datos -->
+		Nombre
+		<input type="textbox" id="fname" onblur="myFunction2()" name="fname" > <br>
+		E - mail  
+		<input type="texbox" id="fmail" name="e-mail"><br>
+		<!--Botón de envío del formulario -->
+		<input type="submit" value="OK" onclick= "myFunction3()" required=""><br>
+
+<script>
+	function myFunction2() {
+	 var x= document.getElementById("fname");
+	 if (x.value = "Lizette") { 
+		alert("Hola Lizette");
+	  }
+	}
+</script>
+
+<script>
+	function myFunction3() {
+	 
+		alert("Haz presionado el botón");
+	  }
+	
+</script>
+</body>
+
+</html>

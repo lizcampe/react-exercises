@@ -1,0 +1,26 @@
+/*Recorre un arreglo usando un callback, imprime cada elemento
+
+
+
+Haz varios callbacks de forma que se imprima:
+1 después de 3 segundos
+2 después de 1 segundo
+3 después de 4 segundos
+En consola debería verse 2 1 3
+*/
+
+[1].forEach(v => console.log(v)) 
+setTimeout(1, 3000)
+
+[2].forEach(v => console.log(v)) 
+setTimeout(2, 1000)
+
+[3].forEach(v => console.log(v)) 
+setTimeout(2, 4000)
+
+/*
+Escribe un callback que recibe un argumento y lo imprime
+Crea una función que recibe el callback anterior y lo ejecuta
+Crea una función que llama a un callback y usa el valor que regresa para llamar a otro. Después debe llamar a un tercer callback con el valor que regresa el segundo
+
+*/

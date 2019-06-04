@@ -1,0 +1,12 @@
+
+function suma_arr(arr, pos) {
+  if (pos <arr.length) {
+ return arr [pos] + suma _arr (arr, pos+1);
+ } else { 
+  return 0 ;   
+  } 
+  }														  
+
+  suma_arr ([2,3,4,5], 0)
+
+  
